@@ -1,0 +1,9 @@
+# HologramBinder
+ホログラムをentityに貼り付けるためのライブラリ
+Required: ProtocolLib
+
+TP式でホログラムをentityに表示させたときに移動中にずれて見えてしまう問題を解決します
+GhastやPhantomなどのmobにはずれて表示されてしまいます
+
+apiモジュールの中身をプラグインのソースコードにコピーするか
+pluginモジュールをビルドして、プラグインの依存関係に追加してください
