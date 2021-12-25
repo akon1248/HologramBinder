@@ -66,14 +66,14 @@ public class HologramImpl implements Hologram {
 
 	@Override
 	public void show(Player player) {
-		if (this.isBound() && EntityTrackerUtil.tracked(player, this.entity)) {
+		if (this.isBound() && EntityTrackerUtil.isTracked(player, this.entity)) {
 			this.display(player);
 		}
 	}
 
 	@Override
 	public void hide(Player player) {
-		if (this.isBound() && EntityTrackerUtil.tracked(player, this.entity)) {
+		if (this.isBound() && EntityTrackerUtil.isTracked(player, this.entity)) {
 			this.delete(player);
 		}
 	}

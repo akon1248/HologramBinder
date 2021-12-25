@@ -82,7 +82,7 @@ public class EntityTrackerUtil {
 			.orElse(Collections.emptySet());
 	}
 
-	public boolean tracked(Player player, Entity entity) {
+	public boolean isTracked(Player player, Entity entity) {
 		return getTrackedPlayers(entity)
 			.filter(trackedPlayers -> trackedPlayers.contains(BukkitUnwrapper.getInstance().unwrapItem(player)))
 			.isPresent();
